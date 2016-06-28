@@ -1,0 +1,928 @@
+@font-face {
+    font-family: Beam;
+    src: url(../font/beamweapon.ttf);
+}
+
+@font-face {
+    font-family: Beam-cond;
+    src: url(../font/beamweaponcond.ttf);
+}
+
+@font-face {
+    font-family: Beam-ital;
+    src: url(../font/beamweaponsuperital.ttf);
+}
+
+@font-face {
+    font-family: Beam-laser;
+    src: url(../font/beamweaponlaser.ttf);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300|Signika:400,600,300,700);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.tablet {
+    display: block;
+}
+
+
+/* ------------ HEADER Area --------------- */
+
+.bg-header {
+    background: #80db45;
+    padding-top: 1rem;
+}
+
+.bg-masthead {
+    background: #3d3d3d;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.bg-masthead .logo {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 2rem;
+}
+
+.tagline {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+.tagline h2 {
+    font-family: Beam-ital, sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+img.hidden-mobile {
+    display: none;
+}
+
+
+/* --------------- NAVBAR ------------------ */
+
+nav {
+    background: #80db45;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Beam-cond, sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+/* ----------------- PROMOTIONS Area ----------------- */
+
+.big-deal {
+    width: 100%;
+    float: left;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.big-deal img {
+    width: 100%;
+    float: left;
+    padding-top: 2rem;
+}
+
+.big-deal h3 {
+    width: 100%;
+    float: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+
+.big-deal span {
+    color: #80db45;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.small-deal img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.small-deal h3 {
+    width: 100%;
+    height: auto;
+    float: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+
+.small-deal {
+    margin-bottom: 1rem;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+
+/* --------------============PROD LISTING ===============-------------------*/
+
+.bg-prodlist {
+    background: url("../img/shattered_@2X.png");
+    background-size: 20% 10%;
+    background-repeat: repeat;
+}
+
+.bg-prodlist ul {
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+.bg-prodlist li {
+    margin: 1rem;
+    background: rgb(245, 245, 245);
+    border: 1px solid #dddede;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.bg-prodlist li:hover {
+    -webkit-box-shadow: 0px 3px 2px 3px rgba(97, 97, 97, 0.55);
+    -moz-box-shadow: 0px 3px 2px 3px rgba(97, 97, 97, 0.55);
+    box-shadow: 0px 3px 2px 3px rgba(97, 97, 97, 0.55);
+    border: 1px solid rgba(97, 97, 97, 0.55);
+}
+
+.bg-prodlist h2 {
+    font-size: 1.6rem;
+    font-family: "Beam-laser", sans-serif;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.bg-prodlist img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    padding: 1rem;
+}
+
+.bg-prodlist h3 {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.bg-prodlist p {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #696969;
+}
+
+.bg-prodlist p.price {
+    color: red;
+    font-size: 1.1rem;
+}
+
+.bg-prodlist .cart-btn {
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.bg-prodlist .cart-btn a {
+    padding: 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 2px solid #80db45;
+    border-radius: 6px;
+    font-family: 'Signika', sans-serif;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    background: #80db45;
+    background: -moz-linear-gradient(top, #a1ef7a 0%, #80db45 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a1ef7a 0%, #80db45 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a1ef7a 0%, #80db45 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a1ef7a', endColorstr='#80db45', GradientType=0);
+    /* IE6-9 */
+}
+
+.bg-prodlist .cart-btn a:hover {
+    border: 2px solid white;
+}
+
+.bg-prodlist .cart-btn a:active {
+    border: 2px solid #9f9f9f;
+    background: -moz-linear-gradient(top, #60b73a 0%, #80db45 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #60b73a 0%, #80db45 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #60b73a 0%, #80db45 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#60b73a', endColorstr='#80db45', GradientType=0);
+    /* IE6-9 */
+}
+
+
+/* --------------============SHOPPING CART LIST===============-------------------*/
+
+.bg-shoplist {
+    margin-top: 2rem;
+}
+
+.bg-shoplist .box {
+    background: rgb(245, 245, 245);
+    margin-bottom: 2rem;
+}
+
+.bg-shoplist .cart {
+    padding: 1rem;
+}
+
+.bg-shoplist h2 {
+    font-family: 'Beam-laser', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.bg-shoplist h3 {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.bg-shoplist ul {
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 1rem;
+}
+
+.bg-shoplist li {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 1rem 0;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.bg-shoplist li a.cancel {
+    color: red;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+}
+
+.bg-shoplist input.clear {
+    width: 47%;
+    max-width: 120px;
+    background: red;
+    border-radius: 6px;
+    padding: 10px;
+    margin-right: 4%;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #ff7c7c;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ff7c7c 0%, #ce3131 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ff7c7c 0%, #ce3131 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ff7c7c 0%, #ce3131 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff7c7c', endColorstr='#ce3131', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    -moz-transition: color 200ms ease;
+    -webkit-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.bg-shoplist input.clear:hover {
+    color: white;
+}
+
+.bg-shoplist input.payNow {
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    width: 47%;
+    max-width: 120px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: #80db45;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #80db45 0%, #60b73a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #80db45 0%, #60b73a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #80db45 0%, #60b73a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80db45', endColorstr='#60b73a', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    -moz-transition: color 200ms ease;
+    -webkit-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.bg-shoplist input.payNow:hover {
+    color: white;
+}
+
+
+/* --------------============ SPECIAL SERVICES Area ===============-------------------*/
+
+.bg-special-service {
+    border-top: 2px solid #ccc;
+}
+
+.bg-special-service .footer-service {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.bg-special-service .box {
+    margin: 0 auto;
+}
+
+.bg-special-service a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Signika', sans-serif;
+    text-decoration: none;
+    -moz-transition: color 200ms ease;
+    -webkit-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.bg-special-service a:hover {
+    color: #80db45;
+}
+
+.bg-special-service .left {
+    width: 23%;
+    float: left;
+    margin-left: 5%;
+    text-align: right;
+}
+
+.bg-special-service .right {
+    width: 67%;
+    padding-left: 5%;
+    float: left;
+    text-align: left;
+}
+
+.bg-special-service a #right,
+.bg-special-service a #left {
+    fill: white;
+}
+
+.bg-special-service a svg {
+    width: 8%;
+}
+
+
+/* --------------============ FOOTER Area ===============-------------------*/
+
+footer {
+    background: black;
+    color: #ccc;
+    padding-top: 1rem;
+}
+
+footer .box {
+    margin: 0 auto;
+}
+
+footer a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ccc;
+    font-family: 'Signika', sans-serif;
+    text-decoration: none;
+    -moz-transition: color 200ms ease;
+    -webkit-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+footer a:hover {
+    color: #80db45;
+}
+
+footer .left {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    text-align: right;
+}
+
+footer .right {
+    width: 70%;
+    padding-left: 5%;
+    float: left;
+    text-align: left;
+}
+
+footer a #right,
+footer a #left {
+    fill: white;
+}
+
+footer a svg {
+    width: 8%;
+}
+
+footer .footer-nav li {
+    width: 45%;
+    float: left;
+    margin-left: 2.5%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .copyright {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Signika', sans-serif;
+    padding: 1rem;
+}
+
+
+/* ---------=============== MEDIA QUERIES ===============------------------ */
+
+@media only screen and (min-width: 40rem) and (max-width:80rem) {
+    /* =====******* ------- TABLET width --------*******======== */
+    .desktop-only {
+        display: none !important;
+    }
+    .tablet {
+        display: block !important;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+    .bg-masthead .box {
+        margin: 0 auto;
+        max-width: 750px;
+    }
+    .bg-masthead .logo {
+        float: none;
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    .tagline {
+        width: 80%;
+    }
+    .tagline h2 {
+        font-size: 1.6rem;
+        padding-top: 5%;
+    }
+    img.hidden-mobile {
+        display: block;
+        float: left;
+        margin: 0 auto 2rem auto;
+        width: 20%;
+        max-width: 170px;
+    }
+    nav ul {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    nav ul li {
+        display: inline;
+        padding: 2rem 1rem;
+    }
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+    .big-deal h3 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .big-deal span {
+        font-size: 2.5rem;
+    }
+    .small-deal {
+        width: 49%;
+        float: left;
+        border: 2px solid #ccc;
+        margin-top: 1rem;
+    }
+    .small-deal:hover {
+        -webkit-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        -moz-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+    }
+    .small-deal:nth-of-type(2) {
+        margin-left: 2%;
+    }
+    .small-deal:first-of-type img:nth-child(1) {
+        width: 48%;
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+    .small-deal:nth-of-type(2) img:nth-child(1) {
+        padding: 2rem;
+    }
+    .small-deal h3 {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+    .big-deal {
+        border: 2px solid #ccc;
+    }
+    .big-deal:hover {
+        -webkit-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        -moz-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+    }
+    .big-deal img {
+        float: none;
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+    .bg-prodlist {
+        width: 66%;
+        float: left;
+        background: none;
+    }
+    .bg-prodlist ul {
+        padding-bottom: 1rem;
+    }
+    .bg-prodlist .box {
+        width: 95%;
+        margin: 1rem 0 2rem 4%;
+        border: 1px solid #adadad;
+    }
+    .bg-prodlist ul li {
+        width: 47%;
+        float: left;
+        padding: 1rem 0;
+        border: 1px solid #adadad;
+        margin: 0;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-left: 2%;
+    }
+    .bg-prodlist ul li img {
+        width: 70%;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    .bg-prodlist h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+    .bg-prodlist p.price {
+        font-size: 1.1rem;
+    }
+    .bg-prodlist h3:hover {
+        text-overflow: inherit;
+        overflow: visible;
+        white-space: pre-wrap;
+    }
+    .bg-prodlist .cart-btn {
+        margin: 1rem 0;
+    }
+    .bg-shoplist {
+        width: 33%;
+        float: left;
+        margin-top: 107px;
+    }
+    .bg-list {
+        background: url("../img/shattered_@2X.png");
+        background-size: 20% 10%;
+        background-repeat: repeat;
+    }
+    .bg-shoplist input.clear {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .bg-shoplist input.payNow {
+        width: 80%;
+    }
+    .bg-special-service a {
+        font-size: 1.0rem
+    }
+    .bg-special-service .box .footer-service {
+        width: 32%;
+        margin-left: 1%;
+        float: left;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    footer a {
+        font-size: 1.1rem;
+    }
+    footer .right {
+        width: 50%;
+        padding-left: 1%;
+    }
+    footer .left {
+        width: 32%;
+    }
+    footer .footer-nav {
+        padding: 1rem 0;
+    }
+    footer .footer-nav li {
+        width: 21%;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    /* =====******* ------- DESKTOP width --------*******======== */
+    .mobile-only {
+        display: none !important;
+    }
+    .tablet {
+        display: none !important;
+    }
+    .desktop-only {
+        display: block !important;
+    }
+    .bg-masthead .box,
+    .bg-promotion .box,
+    .bg-special-service box,
+    footer .box {
+        max-width: 1200px;
+    }
+    .bg-masthead .logo {
+        float: left;
+        width: 40%;
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    .tagline {
+        width: 40%;
+        float: left;
+        margin: 4rem auto;
+    }
+    .tagline h2 {
+        font-size: 1.2rem;
+    }
+    img.float-img {
+        display: block;
+        float: left;
+        margin: 1.8rem auto;
+        width: 20%;
+        max-width: 170px;
+    }
+    nav ul {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    nav ul li {
+        display: inline;
+        padding: 2rem 3rem;
+    }
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+    .big-deal img {
+        width: 70%;
+        float: left;
+    }
+    .big-deal h3 {
+        font-size: 3.4rem;
+        width: 28%;
+        float: left;
+        font-weight: 700;
+        padding: 2rem;
+        margin-top: 4rem;
+        line-height: 1.2;
+    }
+    .big-deal span {
+        font-size: 3.4rem;
+    }
+    .small-deal {
+        width: 49%;
+        float: left;
+        border: 2px solid #ccc;
+        margin-top: 1rem;
+    }
+    .small-deal:hover {
+        -webkit-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        -moz-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+    }
+    .small-deal:nth-of-type(2) {
+        margin-left: 2%;
+    }
+    .small-deal:first-of-type img:nth-child(1) {
+        width: 47.1%;
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+    .small-deal:nth-of-type(2) img:nth-child(1) {
+        padding: 2rem;
+    }
+    .small-deal h3 {
+        padding: 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .big-deal {
+        border: 2px solid #ccc;
+    }
+    .big-deal:hover {
+        -webkit-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        -moz-box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+        box-shadow: 2px 3px 2px 1px rgba(97, 97, 97, 0.35);
+    }
+    .big-deal img {
+        padding: 2rem;
+    }
+    .bg-prodlist {
+        width: 75%;
+        float: left;
+        background: none;
+    }
+    .bg-prodlist h2 {
+        margin-top: 1rem;
+    }
+    .bg-prodlist .box {
+        width: 95%;
+        margin: 0 0 1rem 3%;
+        border: 1px solid #adadad;
+    }
+    .bg-prodlist ul li {
+        width: 30.667%;
+        float: left;
+        padding: 1rem 0;
+        border: 1px solid #adadad;
+        margin: 1rem 0 1rem 2%;
+    }
+    .bg-prodlist ul li img {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+    .bg-prodlist h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .bg-prodlist h3:hover {
+        text-overflow: inherit;
+        overflow: visible;
+        white-space: pre-wrap;
+    }
+    .bg-prodlist .cart-btn {
+        margin: 1rem 0;
+    }
+    .bg-shoplist {
+        width: 23.5%;
+        float: left;
+        margin-top: 107px;
+    }
+    .bg-list {
+        background: url("../img/shattered_@2X.png");
+        background-size: 20% 10%;
+        background-repeat: repeat;
+    }
+    .bg-shoplist input.clear {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .bg-shoplist input.payNow {
+        width: 80%;
+    }
+    .bg-special-service {
+        font-size: 1.8rem;
+    }
+    .bg-special-service .right {
+        padding-left: 15px;
+        width: 56%;
+    }
+    .bg-special-service .left {
+        width: 28%;
+        margin-left: 13%;
+    }
+    .bg-special-service .box .footer-service {
+        width: 29%;
+        margin-left: 1%;
+        float: left;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    footer .footer-nav {
+        text-align: center;
+        width: 60%;
+        margin: 2rem auto;
+        display: block;
+        float: none;
+    }
+    footer .footer-nav li {
+        width: 25%;
+        margin-left: 0;
+    }
+}
